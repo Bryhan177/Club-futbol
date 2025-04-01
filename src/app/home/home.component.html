@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fútbol Fanático</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        .hover-efecto:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Barra de Navegación -->
+    <nav class="bg-green-600 p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">⚽ Fútbol Fanático</h1>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="hover:text-yellow-400 transition duration-300">Inicio</a></li>
+                <li><a href="#" class="hover:text-yellow-400 transition duration-300">Partidos</a></li>
+                <li><a href="#" class="hover:text-yellow-400 transition duration-300">Noticias</a></li>
+                <li><a href="#" class="hover:text-yellow-400 transition duration-300">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="text-center py-20 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?soccer');">
+        <h2 class="text-4xl font-bold bg-black bg-opacity-50 inline-block px-6 py-3 rounded-lg shadow-lg">¡Vive la pasión del fútbol!</h2>
+    </header>
+
+    <!-- Sección de Partidos -->
+    <section class="container mx-auto p-6">
+        <h3 class="text-3xl font-bold text-center mb-6">Partidos Destacados</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-gray-800 p-4 rounded-lg shadow-lg hover-efecto">
+                <h4 class="text-xl font-bold">Real Madrid vs Barcelona</h4>
+                <p class="text-gray-400">Fecha: 10 de abril</p>
+                <p class="text-gray-400">Hora: 20:00</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg shadow-lg hover-efecto">
+                <h4 class="text-xl font-bold">Manchester United vs Liverpool</h4>
+                <p class="text-gray-400">Fecha: 15 de abril</p>
+                <p class="text-gray-400">Hora: 18:00</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg shadow-lg hover-efecto">
+                <h4 class="text-xl font-bold">PSG vs Bayern Munich</h4>
+                <p class="text-gray-400">Fecha: 20 de abril</p>
+                <p class="text-gray-400">Hora: 21:00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-600 text-center p-4 mt-10 shadow-lg">
+        <p>&copy; 2025 Fútbol Fanático - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
