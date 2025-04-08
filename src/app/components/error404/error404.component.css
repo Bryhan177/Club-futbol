@@ -1,0 +1,50 @@
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(circle at center, #2c3e50, #000);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.error-box {
+  max-width: 400px;
+  background-color: #1c1c1c;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  animation: aparecer 1s ease-in-out;
+}
+
+.error-box h1 {
+  font-size: 100px;
+  margin: 0;
+  color: #e74c3c;
+}
+
+.error-box p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.btn-volver {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #e74c3c;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.btn-volver:hover {
+  background-color: #c0392b;
+}
+
+@keyframes aparecer {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
