@@ -1,58 +1,75 @@
+/* Layout general */
+.layout {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f2f2;
+}
 
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f8f8f8;
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #1d1f27;
+  color: #fff;
+  padding: 20px;
+  position: sticky;
+  top: 0;
 }
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.sidebar nav a {
+  display: block;
+  color: #ccc;
+  margin-bottom: 15px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.sidebar nav a:hover {
+  color: #fff;
+}
+
+/* Contenido principal */
+.main-content {
+  flex: 1;
+  padding: 30px;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  color: white;
+  padding: 40px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+/* Secciones */
+.seccion {
+  margin-bottom: 30px;
+}
+
+.seccion h2 {
+  margin-bottom: 15px;
+}
+
+/* Cards */
 .card {
-    width: 600px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 10px;
 }
-.card img {
-    width: 40%;
-    height: auto;
-    object-fit: cover;
-}
-.card-content {
-    width: 60%;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.card-title {
-    font-size: 20px;
-    font-weight: bold;
-    color: #0071c2;
-}
-.rating {
-    color: #f8b400;
-}
-.info {
-    font-size: 14px;
-    color: #555;
-    margin: 5px 0;
-}
-.price {
-    font-size: 18px;
-    font-weight: bold;
-    color: #28a745;
-}
-.btn {
-    display: block;
-    background: #0071c2;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 10px;
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #666;
+  border-top: 1px solid #ddd;
 }
