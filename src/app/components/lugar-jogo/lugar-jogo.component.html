@@ -1,1 +1,62 @@
-<p>lugar-jogo works!</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Buscador</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      padding: 8px;
+      border-bottom: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Lugares De Juego</h2>
+  <label for="Lugares">Lugares de juego:</label>                                  
+  <select id="Lugares" name="Lugares" required>
+    <option value="" disabled selected>Seleccione un lugar de juego</option>                                        
+    <option value="1">Belen</option>
+    <option value="2">Envigado</option>
+    <option value="3">Caldas</option>
+    <option value="4">Bello</option>
+    <option value="5">Medellin</option>
+    <option value="6">Itagui</option>
+    <option value="7">Copacabana</option>
+    <option value="8">La Estrella</option>
+    <option value="9">La Ceja</option>
+    <option value="10">Rionegro</option>
+    <option value="11">Guarne</option>
+    <option value="12">Sabaneta</option>
+
+  <script>
+    const buscador = document.getElementById('buscador');
+    const lista = document.getElementById('lista');
+    const items = lista.getElementsByTagName('li');
+
+    buscador.addEventListener('keyup', function() {
+      const texto = this.value.toLowerCase();
+      for (let i = 0; i < items.length; i++) {
+        const item = items[i].textContent.toLowerCase();
+        items[i].style.display = item.includes(texto) ? '' : 'none';
+      }
+    });
+  </script>
+
+
+
