@@ -6,7 +6,6 @@ import { LugarJogoComponent } from './components/lugar-jogo/lugar-jogo.component
 import { Error404Component } from './components/error404/error404.component';
 
 
-
 export const routes: Routes = [
   {
     path: '',
@@ -22,11 +21,11 @@ export const routes: Routes = [
     component: LoginComponent,
   },
   {
-    path: 'Juegos',
+    path: 'lugar-jogo',
     component: LugarJogoComponent,
   },
   {
     path: '**',
     component: Error404Component,
-  }
-];
+  },
+]
