@@ -4,6 +4,7 @@ import { EquiposComponent } from './components/equipos/equipos.component';
 import { LoginComponent } from './components/login/login.component';
 import { LugarJogoComponent } from './components/lugar-jogo/lugar-jogo.component';
 import { Error404Component } from './components/error404/error404.component';
+import { RegistroComponent } from './components/resgistro/resgistro.component';
 
 
 export const routes: Routes = [
@@ -24,8 +25,12 @@ export const routes: Routes = [
     path: 'lugar-jogo',
     component: LugarJogoComponent,
   },
+    {
+    path: 'registro',
+    component : RegistroComponent,
+  },
   {
     path: '**',
     component: Error404Component,
-  },
+  }
 ]
