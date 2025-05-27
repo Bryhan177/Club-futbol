@@ -15,6 +15,10 @@
   position: sticky;
   top: 0;
 }
+.fondo{
+  background-image: url("https://i.gifer.com/M3Mm.gif");
+  background-size: cover;
+}
 
 .sidebar h2 {
   margin-bottom: 20px;

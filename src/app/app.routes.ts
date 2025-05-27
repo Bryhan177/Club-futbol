@@ -1,43 +1,34 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { EquiposComponent } from './components/equipos/equipos.component';
-import { LoginComponent } from './components/login/login.component';
-import { LugarJogoComponent } from './components/lugar-jogo/lugar-jogo.component';
-import { Error404Component } from './components/error404/error404.component';
-import { RegistroComponent } from './components/resgistro/resgistro.component';
-import { PartidosComponent } from './components/partidos/partidos.component';
-
+import { JugadoresComponent } from './components/jugadores/jugadores.component';
+import { CalendarioComponent } from './components/calendario/calendario.component';
+import { NoticiasComponent } from './components/noticias/noticias.component';
 
 export const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
   },
-
   {
     path: 'equipos',
     component: EquiposComponent,
   },
   {
-    path: 'login',
-    component: LoginComponent,
+    path: 'jugadores',
+    component: JugadoresComponent,
   },
   {
-    path: 'lugar-jogo',
-    component: LugarJogoComponent,
-  },
-    {
-    path: 'registro',
-    component : RegistroComponent,
+    path: 'calendario',
+    component: CalendarioComponent,
   },
   {
-    path: 'partidos',
-    component: PartidosComponent,
-
+    path: 'noticias',
+    component: NoticiasComponent,
   },
-
   {
     path: '**',
-    component: Error404Component,
+    redirectTo: '/',
+    pathMatch: 'full'
   }
 ]

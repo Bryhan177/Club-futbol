@@ -1,0 +1,58 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-calendario',
+  template: `
+    <div class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+          <span class="text-blue-600">Calendario</span> de Partidos
+        </h2>
+        <div class="bg-white rounded-xl shadow-lg p-6">
+          <div class="overflow-x-auto">
+            <table class="min-w-full">
+              <thead class="bg-gray-50">
+                <tr>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Fecha</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Local</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Visitante</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Resultado</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Estado</th>
+                </tr>
+              </thead>
+              <tbody class="bg-white divide-y divide-gray-200">
+                <tr>
+                  <td class="px-6 py-4 whitespace-nowrap">28/05/2025</td>
+                  <td class="px-6 py-4 whitespace-nowrap">Punto Y Coma FC</td>
+                  <td class="px-6 py-4 whitespace-nowrap">Rival 1</td>
+                  <td class="px-6 py-4 whitespace-nowrap">2 - 1</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-blue-600">Finalizado</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 whitespace-nowrap">30/05/2025</td>
+                  <td class="px-6 py-4 whitespace-nowrap">Rival 2</td>
+                  <td class="px-6 py-4 whitespace-nowrap">Punto Y Coma FC</td>
+                  <td class="px-6 py-4 whitespace-nowrap">-</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-green-600">Pendiente</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 whitespace-nowrap">02/06/2025</td>
+                  <td class="px-6 py-4 whitespace-nowrap">Punto Y Coma FC</td>
+                  <td class="px-6 py-4 whitespace-nowrap">Rival 3</td>
+                  <td class="px-6 py-4 whitespace-nowrap">-</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-green-600">Pendiente</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  `
+})
+export class CalendarioComponent implements OnInit {
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+}

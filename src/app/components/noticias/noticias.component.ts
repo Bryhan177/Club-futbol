@@ -1,0 +1,52 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-noticias',
+  template: `
+    <div class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+          Últimas <span class="text-blue-600">Noticias</span>
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <img src="assets/noticias/noticia1.jpg" alt="Victoria épica" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Victoria épica en el último partido</h3>
+              <p class="text-gray-600 mb-4">Nuestro equipo logró una victoria histórica en el último enfrentamiento contra el equipo rival.</p>
+              <button class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-200">
+                Leer Más
+              </button>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <img src="assets/noticias/noticia2.jpg" alt="Nuevos fichajes" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Nuevos fichajes para la temporada</h3>
+              <p class="text-gray-600 mb-4">Anunciamos los nuevos jugadores que se unen a nuestro equipo para reforzar la plantilla.</p>
+              <button class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-200">
+                Leer Más
+              </button>
+            </div>
+          </div>
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <img src="assets/noticias/noticia3.jpg" alt="Entrenamiento" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Entrenamiento especial de verano</h3>
+              <p class="text-gray-600 mb-4">Nuestros jugadores se preparan intensamente para la nueva temporada con un programa especial.</p>
+              <button class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-200">
+                Leer Más
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `
+})
+export class NoticiasComponent implements OnInit {
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+}

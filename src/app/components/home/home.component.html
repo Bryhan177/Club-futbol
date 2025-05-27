@@ -1,44 +1,145 @@
-<!-- HomeComponent HTML -->
-<!-- Estructura de la página principal -->
-<div class="layout">
-  <!-- Sidebar -->
-  <img src="/src/assets/corp_1.jpg" alt="Logo" class="logo" />
-  <aside class="sidebar"> 
-    <h2>⚽ Corporacion Deportiva Punto Y Coma </h2>
-    <nav>
-      <a routerLink="/inicio">Inicio</a>
-      <a routerLink="/equipos">Equipos</a>
-      <a routerLink="/partidos">Partidos</a>
-      <a routerLink="/estadisticas">Estadísticas</a>
-      <a routerLink="/contacto">Contacto</a>
-    </nav>
-  </aside>
+<!-- Sección Hero -->
+<section class="relative h-screen">
+  <div class="absolute fondo inset-0 opacity-75"></div>
+  <div class="relative max-w-7xl mx-auto px-4 py-24">
+    <div class="text-center">
+      <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
+        Bienvenidos a Punto Y Coma FC
+      </h1>
+      <p class="text-xl md:text-2xl text-white/90 mb-8">
+        Donde el fútbol se convierte en pasión y los sueños se hacen realidad
+      </p>
+      <div class="flex justify-center space-x-4">
+        <button class="px-8 py-3 bg-white text-blue-700 rounded-lg hover:bg-blue-100 transition-colors duration-200">
+          Ver Equipos
+        </button>
+        <button class="px-8 py-3 bg-white text-blue-700 rounded-lg hover:bg-blue-100 transition-colors duration-200">
+          Únete a Nosotros
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!-- Contenido principal -->
-  <main class="main-content">
-    <!-- Sección Hero -->
-    <section class="hero">
-      <h1>Bienvenido a FutPro</h1>
-      <p>Tu lugar para todo lo relacionado con el fútbol.</p>
-    </section>
+<!-- Sección de Destacados -->
+<section class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+      <span class="text-blue-600">Nuestros</span> Equipos Destacados
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="https://marketplace.canva.com/EAFQNsDLFX4/2/0/1600w/canva-post-de-instagram-partido-de-futbol-moderno-azul-9MhF0JtTI0E.jpg" alt="Equipo 1" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Primera División</h3>
+          <p class="text-gray-600 mb-4">El equipo que representa a nuestro club en la máxima categoría</p>
+          <button class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-200">
+            Ver Detalles
+          </button>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="https://marketplace.canva.com/EAGJ10HULvw/3/0/900w/canva-historia-de-instagram-partido-de-f%C3%BAtbol-simple-azul-tlfok_s3wos.jpg" alt="Equipo 2" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Juvenil</h3>
+          <p class="text-gray-600 mb-4">El futuro del fútbol en nuestras manos</p>
+          <button class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-200">
+            Ver Detalles
+          </button>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="https://marketplace.canva.com/EAGJ10HULvw/3/0/900w/canva-historia-de-instagram-partido-de-f%C3%BAtbol-simple-azul-tlfok_s3wos.jpg" alt="Equipo 3" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Femenino</h3>
+          <p class="text-gray-600 mb-4">El fútbol femenino en constante crecimiento</p>
+          <button class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-200">
+            Ver Detalles
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Secciones dinámicas -->
-    <section class="seccion">
-      <h2>⚔️ Partidos Destacados</h2>
-      <div class="card">Partido 1</div>
-      <div class="card">Partido 2</div>
-    </section>
+<!-- Sección de Noticias -->
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+      Últimas <span class="text-blue-600">Noticias</span>
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="https://asmedia.epimg.net/les/20221007/ccca9bdaae6037b7a75e56bec5dbebbe/5fb94b698873e2faf6f7f31ee2873d30_720.jpeg" alt="Noticia 1" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Victoria épica en el último partido</h3>
+          <p class="text-gray-600 mb-4">Nuestro equipo logró una victoria histórica en el último enfrentamiento</p>
+          <button class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-200">
+            Leer Más
+          </button>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdTDo3Ni_6roZo5R4ZZKsHP_z2FiXTHvbr1w&s" alt="Noticia 2" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Nuevos fichajes para la temporada</h3>
+          <p class="text-gray-600 mb-4">Anunciamos los nuevos jugadores que se unen a nuestro equipo</p>
+          <button class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-200">
+            Leer Más
+          </button>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="https://www.mundodeportivo.com/files/image_449_464/uploads/2025/05/26/6834d61d63c43.jpeg" alt="Noticia 3" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Entrenamiento especial de verano</h3>
+          <p class="text-gray-600 mb-4">Nuestros jugadores se preparan intensamente para la nueva temporada</p>
+          <button class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-200">
+            Leer Más
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section class="seccion">
-      <h2>📊 Estadísticas</h2>
-      <div class="card">Top Goleadores</div>
-      <div class="card">Equipos Invictos</div>
-    </section>
-    <app-partidos></app-partidos>
-    
-    <!-- Footer -->
-    <footer class="footer">
-      <p>&copy; 2025 FutPro. Todos los derechos reservados.</p>
-    </footer>
-  </main>
-</div>
+<!-- Footer -->
+<footer class="bg-blue-800 text-white py-12">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Punto Y Coma FC</h3>
+        <p class="text-gray-300">Corporación Deportiva Punto Y Coma</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Enlaces Rápidos</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-gray-300 hover:text-white">Inicio</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-white">Equipos</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-white">Jugadores</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-white">Calendario</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Contacto</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-gray-300 hover:text-white">Email: contacto&#64;pycfc.com</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-white">Teléfono: (555) 123-4567</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-white">Dirección: Av. Principal 123</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Redes Sociales</h3>
+        <div class="flex space-x-4">
+          <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+      <p class="text-gray-400">&copy; 2025 Punto Y Coma FC. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
