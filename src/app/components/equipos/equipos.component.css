@@ -1,0 +1,36 @@
+.container {
+  max-width: 600px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}	
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+}
+
+th, td {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+input {
+  margin: 0.5em 0;
+  padding: 0.4em;
+  width: 100%;
+}
+
+button {
+  padding: 0.5em 1em;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

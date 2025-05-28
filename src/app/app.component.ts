@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +9,28 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Club-futbol';
+  constructor(private router: Router) {
+    
+  }
+  gojugadores() {
+    this.router.navigate(['/jugadores']);
+    console.log('ir a jugadores')
 }
+  vaequipos() {
+    this.router.navigate(['/equipos']);
+    console.log('ir a equipos')
+  }
+
+  hoinicio() {
+    this.router.navigate(['/hoinicio']);  
+  }
+  dicalendario() {
+    this.router.navigate(['/calendario']);
+    console.log('ir a calendario')
+  }
+  donoticias() {
+    this.router.navigate(['/noticias']);
+    console.log('ir a noticias')
+  }
+}
+
