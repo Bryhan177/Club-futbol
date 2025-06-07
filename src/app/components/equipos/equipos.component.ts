@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
   selector: 'app-equipos',
   standalone: true,
   imports: [],
-  templateUrl: './equipos.component.html',
+  templateUrl:'./equipos.component.html',
   styleUrl: './equipos.component.css'
 })
 export class EquiposComponent {

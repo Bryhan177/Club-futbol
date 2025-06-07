@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { PartidosComponent } from '../partidos/partidos.component';
+import { EquiposComponent } from '../equipos/equipos.component';
+import { JugadoresComponent } from '../jugadores/jugadores.component'; 
 import { Router } from '@angular/router';
 
 @Component({
@@ -21,4 +23,6 @@ throw new Error('Method not implemented.');
         this.router.navigate(['/equipos']);
         console.log('ir a equipos');
       }
-    }
+     
+  }
+    
