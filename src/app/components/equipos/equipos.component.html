@@ -1,21 +1,41 @@
-<div class="container">
-  <h1>Equipos de Fútbol</h1>
 
-  <table>
-    <thead>
-      <tr>
-        <th>Nombre</th>
-        <th>Ciudad</th>
-        <th>Fundación</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let equipo of equipos">
-        <td>{{ equipo.nombre }}</td>
-        <td>{{ equipo.ciudad }}</td>
-        <td>{{ equipo.fundacion }}</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
+      <div class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+          <span class="text-blue-600">Equipos De Futbol</span> 
+        </h2>
+        <div class="bg-white rounded-xl shadow-lg p-6">
+          <div class="overflow-x-auto">
+            <table class="min-w-full">
+              <thead class="bg-gray-50">
+                <tr>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Nombre</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Ciudad</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Puntos</th>
+                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Estado</th>
+                </tr>
+              </thead>
+              <tbody class="bg-white divide-y divide-gray-200">
+                <tr>
+                  <td class="px-6 py-4 whitespace-nowrap">Ares Ares Futbol Club</td>
+                  <td class="px-6 py-4 whitespace-nowrap">Medellin</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-blue-600">5</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-green-600">Activo</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 whitespace-nowrap">Centuria</td>
+                  <td class="px-6 py-4 whitespace-nowrap">Medellin</td>
+                  <td class="px-6 py-4 whitespace-nowrap">3</td>
+                  <td class="px-6 py-4 whitespace-nowrap">Activo</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 whitespace-nowrap">Chelsea</td>
+                  <td class="px-6 py-4 whitespace-nowrap">Medellin</td>
+                  <td class="px-6 py-4 whitespace-nowrap">6</td>
+                  <td class="px-6 py-4 whitespace-nowrap">Activo</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      

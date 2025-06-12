@@ -13,6 +13,16 @@ import { Router } from '@angular/router';
 })
 
 export class HomeComponent {
+dicalendario() {
+throw new Error('Method not implemented.');
+}
+gojugadores() {
+throw new Error('Method not implemented.');
+}
+hoinicio() {
+throw new Error('Method not implemented.');
+}
+
 loregister() {
   this.router.navigate(['/login']);
   console.log('ir a login');

@@ -1,4 +1,14 @@
 .container {
+  background-image: url('/assets/corp_1.jpg') ; /* Ruta a tu imagen */
+  background-size: center;      /* La imagen cubre todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  height: auto;               /* Ocupa toda la altura de la pantalla */
+  display: center;
+  justify-content: auto;
+  align-items: center;
+  max-width: 600px;
+  margin: auto;
+  font-family: Arial, sans-serif;
   max-width: 600px;
   margin: auto;
   font-family: Arial, sans-serif;
@@ -34,3 +44,4 @@ button {
   border: none;
   cursor: pointer;
 }
+
