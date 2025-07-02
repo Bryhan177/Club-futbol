@@ -6,6 +6,13 @@ body {
     align-items: center;
     height: 100vh;
   }
+.img {
+  background-image: url(../../../assets/oficial.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
   .login-box {
     background: #fff;
     padding: 20px 30px;
