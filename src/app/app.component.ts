@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
 
 @Component({
@@ -36,4 +36,5 @@ export class AppComponent {
     console.log('ir a noticias')
   }
 }
+
 
