@@ -1,30 +1,66 @@
 <nav class="bg-gradient-to-r from-white-600 to-blue-800 text-white shadow-lg">
   <div class="max-w-7xl mx-auto px-4">
-    <div class="flex justify-between h-16">
+    <div class="flex justify-between items-center h-16">
+      <!-- Logo -->
       <div class="flex items-center">
         <img src="assets/oficial.jpg" alt="Logo Punto Y Coma FC" class="h-12 w-auto object-contain">
-        <!--span-- class="ml-4 text-2xl font-bold">Corporación Deportiva Punto Y Coma</!--span-->
       </div>
-      <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-        <a (click)="hoinicio()" class="inline-flex items-center cursor-pointer px-4 py-2 border border-transparent text-sm font-medium rounded-md text-blue-800 hover:bg-yellow-300 transition-colors duration-200">
+
+      <!-- Botón hamburguesa (visible en móviles) -->
+      <div class="sm:hidden">
+        <button (click)="isMenuOpen = !isMenuOpen" class="text-blue-700 focus:outline-none">
+          <svg *ngIf="!isMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg *ngIf="isMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Menú en pantallas grandes -->
+      <div class="hidden sm:flex sm:space-x-8">
+        <a (click)="hoinicio()" class="inline-flex items-center cursor-pointer px-4 py-2 border border-transparent text-sm font-medium rounded-xl text-blue-800 hover:bg-yellow-300 transition-colors duration-200">
           Inicio
         </a>
-        <a (click)="vaequipos()" class="inline-flex items-center cursor-pointer px-4 py-2 border border-transparent text-sm font-medium rounded-md text-blue-800   hover:bg-yellow-300 transition-colors duration-200">
+        <a (click)="vaequipos()" class="inline-flex items-center cursor-pointer px-4 py-2 border border-transparent text-sm font-medium rounded-xl text-blue-800 hover:bg-yellow-300 transition-colors duration-200">
           Equipos
         </a>
-        <a (click)="gojugadores()" class="inline-flex items-center cursor-pointerpx-4 py-2 border border-transparent text-sm font-medium rounded-md text-blue-800  hover:bg-yellow-300 transition-colors duration-200">
+        <a (click)="gojugadores()" class="inline-flex items-center cursor-pointer px-4 py-2 border border-transparent text-sm font-medium rounded-xl text-blue-800 hover:bg-yellow-300 transition-colors duration-200">
           Jugadores
         </a>
-        <a (click)="dicalendario()" class="inline-flex items-center cursor-pointer px-4 py-2 border border-transparent text-sm font-medium rounded-md text-blue-800   hover:bg-yellow-300 transition-colors duration-200">
+        <a (click)="dicalendario()" class="inline-flex items-center cursor-pointer px-4 py-2 border border-transparent text-sm font-medium rounded-xl text-blue-800 hover:bg-yellow-300 transition-colors duration-200">
           Calendario
         </a>
-        <a (click)="donoticias()" class="inline-flex items-center cursor-pointer px-4 py-2 border border-transparent text-sm font-medium rounded-md text-blue-800  hover:bg-yellow-300 transition-colors duration-200">
+        <a (click)="donoticias()" class="inline-flex items-center cursor-pointer px-4 py-2 border border-transparent text-sm font-medium rounded-xl text-blue-800 hover:bg-yellow-300 transition-colors duration-200">
           Noticias
         </a>
       </div>
     </div>
+
+    <!-- Menú desplegable en móviles -->
+    <div *ngIf="isMenuOpen" class="sm:hidden mt-2 space-y-2">
+      <a (click)="hoinicio(); isMenuOpen = false" class="block px-4 py-2 rounded-xl bg-blue-700 text-white hover:bg-yellow-300 hover:text-blue-800 transition-colors duration-200">
+        Inicio
+      </a>
+      <a (click)="vaequipos(); isMenuOpen = false" class="block px-4 py-2 rounded-xl bg-blue-700 text-white hover:bg-yellow-300 hover:text-blue-800 transition-colors duration-200">
+        Equipos
+      </a>
+      <a (click)="gojugadores(); isMenuOpen = false" class="block px-4 py-2 rounded-xl bg-blue-700 text-white hover:bg-yellow-300 hover:text-blue-800 transition-colors duration-200">
+        Jugadores
+      </a>
+      <a (click)="dicalendario(); isMenuOpen = false" class="block px-4 py-2 rounded-xl bg-blue-700 text-white hover:bg-yellow-300 hover:text-blue-800 transition-colors duration-200">
+        Calendario
+      </a>
+      <a (click)="donoticias(); isMenuOpen = false" class="block px-4 py-2 rounded-xl bg-blue-700 text-white hover:bg-yellow-300 hover:text-blue-800 transition-colors duration-200">
+        Noticias
+      </a>
+    </div>
   </div>
 </nav>
+
 
 <div class="min-h-screen bg-gray-50">
   <router-outlet></router-outlet>
