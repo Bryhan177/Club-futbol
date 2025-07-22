@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators, AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-registro',
   standalone: true,
@@ -12,9 +12,10 @@ import { ReactiveFormsModule, FormBuilder, FormGroup, Validators, AbstractContro
 export class RegistroComponent {
   registroForm: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private router: Router) {
     this.registroForm = this.fb.group(
       {
+        
         nombre: ['', [Validators.required, Validators.minLength(3)]],
         email: ['', [Validators.required, Validators.email]],
         password: ['', [Validators.required, Validators.minLength(6)]],
@@ -43,4 +44,10 @@ export class RegistroComponent {
       this.registroForm.markAllAsTouched();
     }
   }
+  loregister() {
+    this.router.navigate(['/login']);
+    console.log('Ir a login');
+    // Aquí puedes agregar la lógica para redirigir al usuario a la página de inicio de sesión
+}
+
 }

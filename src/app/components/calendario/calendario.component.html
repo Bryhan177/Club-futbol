@@ -1,45 +1,77 @@
-    <div class="py-20 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
-          <span class="text-blue-600">Calendario</span> de Partidos
-        </h2>
-        <div class="bg-white rounded-xl shadow-lg p-6">
-          <div class="overflow-x-auto">
-            <table class="min-w-full">
-              <thead class="bg-gray-50">
-                <tr>
-                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Fecha</th>
-                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Local</th>
-                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Visitante</th>
-                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Resultado</th>
-                  <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Estado</th>
-                </tr>
-              </thead>
-              <tbody class="bg-white divide-y divide-gray-200">
-                <tr>
-                  <td class="px-6 py-4 whitespace-nowrap">28/05/2025</td>
-                  <td class="px-6 py-4 whitespace-nowrap">Punto Y Coma FC</td>
-                  <td class="px-6 py-4 whitespace-nowrap">Rival 1</td>
-                  <td class="px-6 py-4 whitespace-nowrap">2 - 1</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-blue-600">Finalizado</td>
-                </tr>
-                <tr>
-                  <td class="px-6 py-4 whitespace-nowrap">30/05/2025</td>
-                  <td class="px-6 py-4 whitespace-nowrap">Rival 2</td>
-                  <td class="px-6 py-4 whitespace-nowrap">Punto Y Coma FC</td>
-                  <td class="px-6 py-4 whitespace-nowrap">-</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-green-600">Pendiente</td>
-                </tr>
-                <tr>
-                  <td class="px-6 py-4 whitespace-nowrap">02/06/2025</td>
-                  <td class="px-6 py-4 whitespace-nowrap">Punto Y Coma FC</td>
-                  <td class="px-6 py-4 whitespace-nowrap">Rival 3</td>
-                  <td class="px-6 py-4 whitespace-nowrap">-</td>
-                  <td class="px-6 py-4 whitespace-nowrap text-green-600">Pendiente</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+<div class="py-20 bg-gradient-to-b from-white to-yellow-300">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+      <span class="text-blue-600">Calendario</span> de Partidos
+    </h2>
+
+    <!-- Versión para pantallas grandes -->
+    <div class="bg-white rounded-xl shadow-lg p-6 hidden md:block">
+      <div class="overflow-x-auto">
+        <table class="min-w-full">
+          <thead class="bg-gray-50">
+            <tr>
+              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Fecha</th>
+              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Local</th>
+              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Visitante</th>
+              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Resultado</th>
+              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Estado</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white divide-y divide-gray-200">
+            <tr>
+              <td class="px-6 py-4 whitespace-nowrap">28/05/2025</td>
+              <td class="px-6 py-4 whitespace-nowrap">Punto Y Coma FC</td>
+              <td class="px-6 py-4 whitespace-nowrap">Rival 1</td>
+              <td class="px-6 py-4 whitespace-nowrap">2 - 1</td>
+              <td class="px-6 py-4 whitespace-nowrap text-blue-600">Finalizado</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 whitespace-nowrap">30/05/2025</td>
+              <td class="px-6 py-4 whitespace-nowrap">Rival 2</td>
+              <td class="px-6 py-4 whitespace-nowrap">Punto Y Coma FC</td>
+              <td class="px-6 py-4 whitespace-nowrap">-</td>
+              <td class="px-6 py-4 whitespace-nowrap text-green-600">Pendiente</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 whitespace-nowrap">02/06/2025</td>
+              <td class="px-6 py-4 whitespace-nowrap">Punto Y Coma FC</td>
+              <td class="px-6 py-4 whitespace-nowrap">Rival 3</td>
+              <td class="px-6 py-4 whitespace-nowrap">-</td>
+              <td class="px-6 py-4 whitespace-nowrap text-green-600">Pendiente</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
+
+    <!-- Versión para móviles -->
+    <div class="space-y-4 md:hidden">
+      <!-- Partido 1 -->
+      <div class="bg-white rounded-xl shadow-md p-4">
+        <p><span class="font-semibold">Fecha:</span> 28/05/2025</p>
+        <p><span class="font-semibold">Local:</span> Punto Y Coma FC</p>
+        <p><span class="font-semibold">Visitante:</span> Rival 1</p>
+        <p><span class="font-semibold">Resultado:</span> 2 - 1</p>
+        <p><span class="font-semibold text-blue-600">Finalizado</span></p>
+      </div>
+
+      <!-- Partido 2 -->
+      <div class="bg-white rounded-xl shadow-md p-4">
+        <p><span class="font-semibold">Fecha:</span> 30/05/2025</p>
+        <p><span class="font-semibold">Local:</span> Rival 2</p>
+        <p><span class="font-semibold">Visitante:</span> Punto Y Coma FC</p>
+        <p><span class="font-semibold">Resultado:</span> -</p>
+        <p><span class="font-semibold text-green-600">Pendiente</span></p>
+      </div>
+
+      <!-- Partido 3 -->
+      <div class="bg-white rounded-xl shadow-md p-4">
+        <p><span class="font-semibold">Fecha:</span> 02/06/2025</p>
+        <p><span class="font-semibold">Local:</span> Punto Y Coma FC</p>
+        <p><span class="font-semibold">Visitante:</span> Rival 3</p>
+        <p><span class="font-semibold">Resultado:</span> -</p>
+        <p><span class="font-semibold text-green-600">Pendiente</span></p>
+      </div>
+    </div>
+  </div>
+</div>

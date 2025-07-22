@@ -1,15 +1,12 @@
-<div class="flex min-h-screen">
-  <!-- Imagen a la izquierda -->
-  <div class="w-1/2 hidden md:block img"></div>
-
-  <!-- Formulario a la derecha -->
-  <div class="w-full md:w-1/2 flex items-center justify-center p-6 bg-gray-100">
+<div class="min-h-screen flex items-center justify-center bg-gradient-to-br from-white to-yellow-300 px-4">
+  <!-- Contenedor del formulario -->
+  <div class="w-full max-w-md bg-yellow-300 p-8 rounded-2xl shadow-lg">
     <form
       [formGroup]="registroForm!"
       (ngSubmit)="onSubmit()"
-      class="w-full max-w-md bg-yellow-300 p-8 rounded-2xl shadow-md space-y-6"
+      class="space-y-6"
     >
-      <h2 class="text-2xl font-bold text-center">Registro</h2>
+      <h2 class="text-3xl font-bold text-center text-blue-800">Registro</h2>
 
       <!-- Nombre -->
       <div>
@@ -77,6 +74,7 @@
         >
           Registrarse
         </button>
+        <div _ngcontent-ng-c2774288488="" class="text-center dark:text-white animate__animated animate__delay-1s animate__flipInY ng-tns-c2774288488-6"> ¿Ya Tienes Cuenta? <a _ngcontent-ng-c2774288488="" class="text-blue-500 hover:underline cursor-pointer" (click)="loregister()">Inicia Sesión</a></div>
       </div>
     </form>
   </div>
